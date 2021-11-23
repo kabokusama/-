@@ -31,6 +31,6 @@ async def ping(ctx):
 @bot.command()
 async def picture(ctx):
     pic = discord.File('D:\pic\live2D.png')
-    await ctx.send(file= pic)
+    await ctx.send(file=pic)
 
 bot.run(jdata['TOKEN'])
