@@ -28,4 +28,9 @@ async def on_member_remove(member):
 async def ping(ctx):
     await ctx.send(F'{round(bot.latency*1000)} (ms)')
 
+@bot.command()
+async def picture(ctx):
+    pic = discord.File('D:\pic\live2D.png')
+    await ctx.send(file= pic)
+
 bot.run(jdata['TOKEN'])
